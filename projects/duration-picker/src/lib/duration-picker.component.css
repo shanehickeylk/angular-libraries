@@ -1,0 +1,12 @@
+.duration-picker {
+  display: flex;
+  flex-direction: row;
+}
+
+.duration-picker__select {
+  flex: 0 1 50%;
+}
+
+.duration-picker__select:first-of-type {
+  margin-right: 15px;
+}

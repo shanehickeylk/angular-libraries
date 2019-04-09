@@ -1,0 +1,13 @@
+<div class="duration-picker" [formGroup]="duration">
+    <select class="duration-picker__select" id="durationHours" formControlName="durationHours">
+        <option [value]="durationHours.value" *ngFor="let durationHours of filteredDurationHours">
+            {{durationHours.label}}
+        </option>
+    </select>
+
+    <select class="duration-picker__select" id="durationMinutes" formControlName="durationMinutes">
+        <option [value]="durationMinutes.value" *ngFor="let durationMinutes of filteredDurationMinutes">
+            {{durationMinutes.label}}
+        </option>
+    </select>
+</div>

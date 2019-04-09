@@ -17,6 +17,29 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ],
+      "my-lib": [
+        "dist/my-lib"
+      ],
+      "my-lib/*": [
+        "dist/my-lib/*"
+      ],
+      "duration-picker": [
+        "dist/duration-picker"
+      ],
+      "duration-picker/*": [
+        "dist/duration-picker/*"
+      ],
+      "pipes": [
+        "dist/pipes"
+      ],
+      "pipes/*": [
+        "dist/pipes/*"
+      ]
+    }
   }
 }
