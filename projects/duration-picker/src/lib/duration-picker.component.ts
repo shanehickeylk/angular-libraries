@@ -2,20 +2,35 @@ import { Component, ChangeDetectionStrategy, Input, forwardRef } from '@angular/
 import { FormBuilder, FormGroup, FormControl, ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 export const DURATION_HOURS = [
-    { label: '0 hours', value: 0 },
-    { label: '1 hour', value: 1 * 60 * 60 },
-    { label: '2 hours', value: 2 * 60 * 60 },
-    { label: '3 hours', value: 3 * 60 * 60 },
-    { label: '4 hours', value: 4 * 60 * 60 },
-    { label: '5 hours', value: 5 * 60 * 60 },
-    { label: '6 hours', value: 6 * 60 * 60 },
-    { label: '7 hours', value: 7 * 60 * 60 },
-    { label: '8 hours', value: 8 * 60 * 60 }
+    { label: '0 hours',  value: 0 },
+    { label: '1 hour',   value: 1 * 60 * 60 },
+    { label: '2 hours',  value: 2 * 60 * 60 },
+    { label: '3 hours',  value: 3 * 60 * 60 },
+    { label: '4 hours',  value: 4 * 60 * 60 },
+    { label: '5 hours',  value: 5 * 60 * 60 },
+    { label: '6 hours',  value: 6 * 60 * 60 },
+    { label: '7 hours',  value: 7 * 60 * 60 },
+    { label: '8 hours',  value: 8 * 60 * 60 },
+    { label: '9 hours',  value: 9 * 60 * 60 },
+    { label: '10 hours', value: 10 * 60 * 60 },
+    { label: '11 hours', value: 11 * 60 * 60 },
+    { label: '12 hours', value: 12 * 60 * 60 },
+    { label: '13 hours', value: 13 * 60 * 60 },
+    { label: '14 hours', value: 14 * 60 * 60 },
+    { label: '15 hours', value: 15 * 60 * 60 },
+    { label: '16 hours', value: 16 * 60 * 60 },
+    { label: '17 hours', value: 17 * 60 * 60 },
+    { label: '18 hours', value: 18 * 60 * 60 },
+    { label: '19 hours', value: 19 * 60 * 60 },
+    { label: '20 hours', value: 20 * 60 * 60 },
+    { label: '21 hours', value: 21 * 60 * 60 },
+    { label: '22 hours', value: 22 * 60 * 60 },
+    { label: '23 hours', value: 23 * 60 * 60 }
 ];
 
 export const DURATION_MINUTES = [
-    { label: '0 minutes', value: 0 },
-    { label: '5 minutes', value: 300 },
+    { label: '0 minutes',  value: 0 },
+    { label: '5 minutes',  value: 300 },
     { label: '10 minutes', value: 600 },
     { label: '15 minutes', value: 900 },
     { label: '20 minutes', value: 1200 },
@@ -44,7 +59,7 @@ export const DURATION_MINUTES = [
 })
 export class DurationPickerComponent implements ControlValueAccessor {
   @Input('value') _value;
-  maxDurationX = 32100;
+  maxDurationX = 86100;
   durationsInHours = DURATION_HOURS;
   durationsInMinutes = DURATION_MINUTES;
   duration: FormGroup;
