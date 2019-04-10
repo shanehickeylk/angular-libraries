@@ -40,6 +40,12 @@
       "pipes/*": [
         "dist/pipes/*"
       ],
+      "json-api": [
+        "dist/json-api"
+      ],
+      "json-api/*": [
+        "dist/json-api/*"
+      ],
       "typescript-helpers": [
         "dist/typescript-helpers"
       ],
