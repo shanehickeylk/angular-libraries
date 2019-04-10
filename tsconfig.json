@@ -39,6 +39,12 @@
       ],
       "pipes/*": [
         "dist/pipes/*"
+      ],
+      "typescript-helpers": [
+        "dist/typescript-helpers"
+      ],
+      "typescript-helpers/*": [
+        "dist/typescript-helpers/*"
       ]
     }
   }
